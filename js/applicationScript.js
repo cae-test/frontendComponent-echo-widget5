@@ -78,7 +78,7 @@ var echoFunction = function(){
     //$("#echo-output").html("Updated Element");
   });
 
-  $("#echo-output").html("Updated Element");
+  $("#echo-output").html("Backend service called");
   //Additional own javascript
  return echoResult;
 }
