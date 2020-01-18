@@ -66,7 +66,7 @@ var echoFunction = function(){
 //end variable declaration
 
    var test123 = null;
-  client.sendRequest("POST", echo, test123, "text/plain", {}, true,
+  client.sendRequest("POST", echo, $("#echo-input").val(), "text/plain", {}, true,
   function(data, type) {
     console.log(data);
     //Also update the html element?
