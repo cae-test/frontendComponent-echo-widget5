@@ -69,7 +69,8 @@ var echoFunction = function(){
   client.sendRequest("POST", echo, $("#echo-input").val(), "text/plain", {}, true,
   function(data, type) {
     console.log(data);
-    //Also update the html element?
+    //Also update the html element? 
+    $("#echo-output").html(data);
     //$("#echo-output").html("Updated Element");
   },
   function(error) {
